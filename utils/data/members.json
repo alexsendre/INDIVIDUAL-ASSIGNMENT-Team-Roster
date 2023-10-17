@@ -1,0 +1,47 @@
+{
+  "-NgvJN3Tn7_2k-Ygh4cg": {
+    "fbK": "-NgvJN3Tn7_2k-Ygh4cg",
+    "image": "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/Headshot_Saka_1510x850_0.jpg?auto=webp&itok=iYwho6rd",
+    "name": "Bukayo Sako",
+    "role": "Forward",
+    "favorite": true,
+    "playerNumber": 7,
+    "uid": "Vbl6mFkrrkfhN9k1we4jCdDaUwg1"
+  },
+  "-NgvJN3VDdo8HZSf0eoU": {
+    "fbK": "-NgvJN3VDdo8HZSf0eoU",
+    "image": "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/Headshot_Jesus_1510x850_0.jpg?auto=webp&itok=ygaxcjvE",
+    "name": "Gabriel Jesus",
+    "role": "Forward",
+    "favorite": true,
+    "playerNumber": 9,
+    "uid": "Vbl6mFkrrkfhN9k1we4jCdDaUwg1"
+  },
+  "-NgvJN3WZWx-GrpMDwqR": {
+    "fbK": "-NgvJN3WZWx-GrpMDwqR",
+    "image": "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/Headshot_Odegaard_1510x850_0.jpg?auto=webp&itok=s3T162hX",
+    "name": "Martin Odegaard",
+    "role": "Midfielder",
+    "favorite": false,
+    "playerNumber": 8,
+    "uid": "Vbl6mFkrrkfhN9k1we4jCdDaUwg1"
+  },
+  "-NgvJN3Xjo8vcVgzEDS4": {
+    "fbK": "-NgvJN3Xjo8vcVgzEDS4",
+    "image": "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/MicrosoftTeams-image%20%2832%29_0.png?auto=webp&itok=2X9D1RAU",
+    "name": "Takehiro Tomiyasu",
+    "role": "Defender",
+    "favorite": false,
+    "playerNumber": 18,
+    "uid": "Vbl6mFkrrkfhN9k1we4jCdDaUwg1"
+  },
+  "-NgvJN3Yael3gyeTkxab": {
+    "fbK": "-NgvJN3Yael3gyeTkxab",
+    "image": "https://www.arsenal.com/sites/default/files/styles/player_card_large/public/images/Headshot_Ramsdale_1510x850_0.jpg?auto=webp&itok=fKQag-VL",
+    "name": "Aaron Ramsdale",
+    "role": "Goalkeeper",
+    "favorite": false,
+    "playerNumber": 1,
+    "uid": "Vbl6mFkrrkfhN9k1we4jCdDaUwg1"
+  }
+}
