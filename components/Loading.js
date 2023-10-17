@@ -10,8 +10,9 @@ export default function Loading() {
         animation="border"
         style={{
           color: '#00BF67',
-          width: '100px',
-          height: '100px',
+          width: '50px',
+          height: '50px',
+          marginTop: '50px',
         }}
       />
     </div>
