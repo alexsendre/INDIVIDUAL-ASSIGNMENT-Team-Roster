@@ -29,7 +29,19 @@ const getSingleMember = (fbK) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
+const deleteMember = (fbK) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/members/${fbK}.json`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  }).then((response) => response.json())
+    .then((data) => resolve(data))
+    .catch(reject);
+});
+
 export {
   getMembers,
   getSingleMember,
+  deleteMember,
 };
