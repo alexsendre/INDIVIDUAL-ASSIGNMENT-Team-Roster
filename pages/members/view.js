@@ -17,10 +17,13 @@ export default function AllMembers() {
   });
 
   return (
-    <div className="d-flex flex-wrap">
-      {members.map((member) => (
-        <MemberCard key={member.fbK} memberObj={member} onUpdate={getAllMembers} />
-      ))}
-    </div>
+    <>
+      <h1 className="text-center mt-4 mb-4 text-white">TEAM</h1>
+      <div className="d-flex flex-wrap">
+        {members.map((member) => (
+          <MemberCard key={member.fbK} memberObj={member} onUpdate={getAllMembers} />
+        ))}
+      </div>
+    </>
   );
 }
