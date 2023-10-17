@@ -3,7 +3,7 @@ import { getMembers } from '../../api/memberData';
 import MemberCard from '../../components/MemberCard';
 import { useAuth } from '../../utils/context/authContext';
 
-export default function ViewMembers() {
+export default function AllMembers() {
   const [members, setMembers] = useState([]);
 
   const { user } = useAuth();
