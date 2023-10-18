@@ -11,6 +11,7 @@ export default function UserProfile() {
     <div className="text-center">
       <div className="mb-4">
         <h1 className="text-white mt-4 mb-3">{user.displayName}</h1>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={user.photoURL} alt="User Profile" />
       </div>
       <div>

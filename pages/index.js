@@ -16,7 +16,7 @@ function Home() {
         margin: '0 auto',
       }}
     >
-      <h1>Welcome, {user.displayName} </h1>
+      <h1>Welcome, <span className="user-greet">{user.displayName}</span> </h1>
       <div>
         <h4 className="text-white">
           Create a <span className="m-cl">new member</span> or check out <span className="tr-cl">the roster</span> below!
