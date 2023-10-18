@@ -18,13 +18,23 @@ a {
 }
 
 body {
-  background-color: #000b0e;
+  background-color: #000a0b;
 }
 
 .m-cl {
-  color: lightcoral;
+  color: rgb(172, 212, 255);
 }
 
 .tr-cl {
-  color: lightblue;
+  color: rgb(190, 255, 180);
+}
+
+.login-w, .logout-w {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.form-w, .f-c {
+  width: 25%;
+  margin: 0 auto;
 }
