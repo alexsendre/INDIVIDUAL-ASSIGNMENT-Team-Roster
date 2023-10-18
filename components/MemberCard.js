@@ -6,7 +6,7 @@ import { deleteMember } from '../api/memberData';
 
 export default function MemberCard({ memberObj, onUpdate }) {
   const deletePlayer = () => {
-    if (window.confirm(`Remove ${memberObj.fbK}?`)) {
+    if (window.confirm(`Remove ${memberObj.name}?`)) {
       deleteMember(memberObj.fbK).then(() => onUpdate());
     }
   };
@@ -19,8 +19,6 @@ export default function MemberCard({ memberObj, onUpdate }) {
           {memberObj.name}
           <br />
           {memberObj.role}
-          <br />
-          {memberObj.playerNumber}
         </Card.Title>
         <div className="text-center">
           {/* <Link href={`/members/${memberObj.fbK}`} passHref>
