@@ -19,7 +19,7 @@ export default function AllMembers() {
   return (
     <>
       <h1 className="text-center mt-4 mb-4 text-white">TEAM</h1>
-      <div className="d-flex flex-wrap">
+      <div className="d-flex flex-wrap justify-content-center">
         {members.map((member) => (
           <MemberCard key={member.fbK} memberObj={member} onUpdate={getAllMembers} />
         ))}

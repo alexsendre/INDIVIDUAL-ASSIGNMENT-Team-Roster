@@ -56,7 +56,7 @@ function NewMemberForm({ obj }) {
       <Form.Group
         className="mb-3 mt-3"
       >
-        <FloatingLabel controlId="floatingInput1" label="Full Name" className="mb-3">
+        <FloatingLabel controlId="floatingInput1" label="Full Name" className="mb-3 f-w f-c">
           <Form.Control
             type="text"
             placeholder="Enter Full Name"
@@ -71,7 +71,7 @@ function NewMemberForm({ obj }) {
       <Form.Group
         className="mb-3"
       >
-        <FloatingLabel controlId="floatingInput4" label="Member Image" className="mb-3">
+        <FloatingLabel controlId="floatingInput4" label="Member Image" className="mb-3 f-w f-c">
           <Form.Control
             type="url"
             placeholder="Enter image url"
@@ -86,7 +86,7 @@ function NewMemberForm({ obj }) {
       <Form.Group
         className="mb-3 mt-3"
       >
-        <FloatingLabel controlId="floatingInput1" label="Select Role" className="mb-3">
+        <FloatingLabel controlId="floatingInput1" label="Select Role" className="mb-3 f-w f-c">
           <Form.Select
             type="text"
             placeholder="Select Role"
@@ -108,7 +108,7 @@ function NewMemberForm({ obj }) {
         controlId="formBasicCheckbox"
       >
         <Form.Check
-          className="text-white"
+          className="text-white f-c"
           type="switch"
           id="favorite"
           name="favorite"
