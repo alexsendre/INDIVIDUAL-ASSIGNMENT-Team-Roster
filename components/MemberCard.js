@@ -18,6 +18,8 @@ export default function MemberCard({ memberObj, onUpdate }) {
         <Card.Title className="text-center">
           {memberObj.name}
           <br />
+          <span>{memberObj.favorite ? '⭐' : ''}</span>
+          <br />
           {memberObj.role}
         </Card.Title>
         <div className="text-center">

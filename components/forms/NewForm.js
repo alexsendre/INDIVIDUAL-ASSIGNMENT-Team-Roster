@@ -50,7 +50,7 @@ function NewMemberForm({ obj }) {
   return (
     <Form onSubmit={handleSubmit}>
       <h2 className="text-white text-center mt-4">
-        {obj.fbK ? 'Update' : 'Create'} Member
+        {obj.fbK ? 'Update' : 'Add a'} Member
       </h2>
 
       <Form.Group
@@ -125,7 +125,7 @@ function NewMemberForm({ obj }) {
 
       <Form.Group className="text-center">
         <Button variant="primary" type="submit">
-          {obj.fbK ? 'Update' : 'Create'} Member
+          {obj.fbK ? 'Update' : 'Add'} Member
         </Button>
       </Form.Group>
     </Form>
