@@ -38,3 +38,7 @@ body {
   width: 25%;
   margin: 0 auto;
 }
+
+.user-greet {
+  color: lightgoldenrodyellow;
+}
