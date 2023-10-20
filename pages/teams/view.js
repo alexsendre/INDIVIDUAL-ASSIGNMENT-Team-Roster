@@ -24,7 +24,7 @@ export default function AllTeams() {
       <hr className="hr-m mb-4 w-10" />
       <div className="mt-3 mb-4 text-center">
         <Link href="/teams/new" passHref>
-          <Button variant="primary" size="md" className="btn-m">Add a Team</Button>
+          <Button size="md" className="btn-m">Add a Team</Button>
         </Link>
       </div>
       <div className="d-flex flex-wrap justify-content-center">

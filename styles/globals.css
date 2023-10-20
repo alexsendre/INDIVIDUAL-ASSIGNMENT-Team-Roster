@@ -52,6 +52,11 @@ body {
   margin: 0 auto;
 }
 
+.view-hr {
+  width: 50%;
+  border: 1px solid black;
+}
+
 .team-card {
   margin-bottom: 0;
 }
