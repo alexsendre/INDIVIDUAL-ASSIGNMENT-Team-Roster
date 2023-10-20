@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import { getSingleMember } from '../../../api/memberData';
-import NewMemberForm from '../../../components/forms/NewForm';
+import NewMemberForm from '../../../components/forms/NewMemberForm';
 
 export default function EditMember() {
   const [editItem, setEditItem] = useState({});

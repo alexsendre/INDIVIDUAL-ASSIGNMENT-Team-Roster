@@ -18,15 +18,15 @@ a {
 }
 
 body {
-  background-color: #000a0b;
+  background-color: #EDF2F4;
 }
 
 .m-cl {
-  color: rgb(172, 212, 255);
+  color: rgb(77, 163, 255);
 }
 
 .tr-cl {
-  color: rgb(190, 255, 180);
+  color: rgb(61, 142, 49);
 }
 
 .login-w, .logout-w {
@@ -40,5 +40,54 @@ body {
 }
 
 .user-greet {
-  color: lightgoldenrodyellow;
+  color: rgb(0, 54, 75);
+}
+
+.s-in {
+  border-radius: 20px;
+}
+
+.h-p, .hr-m {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.team-card {
+  margin-bottom: 0;
+}
+
+.btn-m {
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+.btn-m:hover {
+  transition: 300ms;
+  border: 1px solid #2B2D42;
+  background-color: #2B2D42;
+  color: white;
+}
+
+.del-btn, .view-btn, .edit-btn {
+  background-color: transparent;
+  border: .5px solid white;
+}
+
+.view-btn:hover {
+  transition: 300ms;
+  background-color: #aaf683;
+  border: 1px solid #aaf683;
+}
+
+.edit-btn:hover {
+  transition: 300ms;
+  background-color: #f7b267;
+  border: 1px solid #f7b267;
+}
+
+.del-btn:hover {
+  transition: 300ms;
+  background-color: #a11d33;
+  border: 1px solid #a11d33;
 }

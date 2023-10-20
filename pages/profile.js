@@ -10,19 +10,19 @@ export default function UserProfile() {
   return (
     <div className="text-center">
       <div className="mb-4">
-        <h1 className="text-white mt-4 mb-3">{user.displayName}</h1>
+        <h1 className="mt-5 mb-3">{user.displayName}</h1>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src={user.photoURL} alt="User Profile" />
       </div>
       <div>
-        <h4 className="text-white mt-5">
+        <h4 className="mt-5">
           Hey there, thanks for using our app!
           <br />
-          Create a <span className="m-cl">new member</span> or check out <span className="tr-cl">the roster</span> below!
+          Check out <span className="m-cl">the teams</span> or check out <span className="tr-cl">the roster</span> below!
         </h4>
         <div className="profile-btns mt-4">
-          <Button style={{ marginRight: '5px' }} size="lg" variant="primary" onClick={() => router.push('/members/view')}>View Members</Button>
-          <Button style={{ marginLeft: '5px' }} size="lg" variant="success" onClick={() => router.push('/members/new')}>Add Members</Button>
+          <Button style={{ marginRight: '5px' }} size="lg" className="btn-m" onClick={() => router.push('/teams/view')}>View Teams</Button>
+          <Button style={{ marginLeft: '5px' }} size="lg" className="btn-m" onClick={() => router.push('/members/view')}>View Members</Button>
         </div>
       </div>
     </div>
