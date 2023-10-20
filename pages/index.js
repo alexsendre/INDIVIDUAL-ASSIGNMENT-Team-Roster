@@ -16,14 +16,14 @@ function Home() {
         margin: '0 auto',
       }}
     >
-      <h1>Welcome, <span className="user-greet">{user.displayName}</span> </h1>
+      <h1 style={{ color: 'black' }}>Welcome, <span className="user-greet">{user.displayName}</span> </h1>
       <div>
-        <h4 className="text-white">
-          Create a <span className="m-cl">new member</span> or check out <span className="tr-cl">the roster</span> below!
+        <h4 style={{ color: 'black' }} className="mt-2">
+          Check out <span className="m-cl">the teams</span> or check out <span className="tr-cl">our members</span> below!
         </h4>
         <div className="profile-btns mt-4">
-          <Button style={{ marginRight: '5px' }} size="lg" variant="primary" onClick={() => router.push('/members/view')}>View Members</Button>
-          <Button style={{ marginLeft: '5px' }} size="lg" variant="success" onClick={() => router.push('/members/new')}>Add Members</Button>
+          <Button style={{ marginRight: '5px' }} size="lg" className="btn-m" onClick={() => router.push('/teams/view')}>View Teams</Button>
+          <Button style={{ marginLeft: '5px' }} size="lg" className="btn-m" onClick={() => router.push('/members/view')}>View Members</Button>
         </div>
       </div>
     </div>

@@ -3,17 +3,16 @@ import PropTypes from 'prop-types';
 import { useRouter } from 'next/router';
 import { Button, FloatingLabel, Form } from 'react-bootstrap';
 import { useAuth } from '../../utils/context/authContext';
-import { createMember, updateMember } from '../../api/memberData';
+import { createTeam, updateTeam } from '../../api/clubData';
 
 const initialState = {
-  name: '',
-  image: '',
-  role: '',
-  playerNumber: null,
+  club_name: '',
+  logo: '',
+  team_image: '',
   favorite: false,
 };
 
-function NewMemberForm({ obj }) {
+function NewTeamForm({ obj }) {
   const [formInput, setFormInput] = useState(initialState);
   const router = useRouter();
   const { user } = useAuth();
@@ -34,34 +33,34 @@ function NewMemberForm({ obj }) {
     e.preventDefault();
 
     if (obj.fbK) {
-      updateMember(formInput).then(() => router.push('/members/view'));
+      updateTeam(formInput).then(() => router.push('/teams/view'));
     } else {
       const payload = { ...formInput, uid: user.uid };
-      createMember(payload).then(({ name }) => {
+      createTeam(payload).then(({ name }) => {
         const patchPayload = { fbK: name };
 
-        updateMember(patchPayload).then(() => {
-          router.push('/members/view');
+        updateTeam(patchPayload).then(() => {
+          router.push('/teams/view');
         });
       });
     }
   };
 
   return (
-    <Form onSubmit={handleSubmit}>
-      <h2 className="text-white text-center mt-4">
-        {obj.fbK ? 'Update' : 'Add a'} Member
+    <Form onSubmit={handleSubmit} className="form">
+      <h2 className=" text-center mt-4">
+        {obj.fbK ? 'Update' : 'Add a'} Club
       </h2>
 
       <Form.Group
         className="mb-3 mt-3"
       >
-        <FloatingLabel controlId="floatingInput1" label="Full Name" className="mb-3 f-w f-c">
+        <FloatingLabel controlId="floatingInput1" label="Club Name" className="mb-3 f-w f-c">
           <Form.Control
             type="text"
-            placeholder="Enter Full Name"
-            name="name"
-            value={formInput.name}
+            placeholder="Enter Club Name"
+            name="club_name"
+            value={formInput.club_name}
             onChange={handleChange}
             required
           />
@@ -71,12 +70,12 @@ function NewMemberForm({ obj }) {
       <Form.Group
         className="mb-3"
       >
-        <FloatingLabel controlId="floatingInput4" label="Member Image" className="mb-3 f-w f-c">
+        <FloatingLabel controlId="floatingInput4" label="Club Logo" className="mb-3 f-w f-c">
           <Form.Control
             type="url"
-            placeholder="Enter image url"
-            name="image"
-            value={formInput.image}
+            placeholder="Enter Club Logo URL"
+            name="logo"
+            value={formInput.logo}
             onChange={handleChange}
             required
           />
@@ -84,22 +83,17 @@ function NewMemberForm({ obj }) {
       </Form.Group>
 
       <Form.Group
-        className="mb-3 mt-3"
+        className="mb-3"
       >
-        <FloatingLabel controlId="floatingInput1" label="Select Role" className="mb-3 f-w f-c">
-          <Form.Select
-            type="text"
-            placeholder="Select Role"
-            name="role"
-            value={formInput.role}
+        <FloatingLabel controlId="floatingInput4" label="Team Image" className="mb-3 f-w f-c">
+          <Form.Control
+            type="url"
+            placeholder="Enter Team Image URL"
+            name="team_image"
+            value={formInput.team_image}
             onChange={handleChange}
             required
-          >
-            <option value="Forward">Forward</option>
-            <option value="Midfielder">Midfielder</option>
-            <option value="Defender">Defender</option>
-            <option value="Goalkeeper">Goalkeeper</option>
-          </Form.Select>
+          />
         </FloatingLabel>
       </Form.Group>
 
@@ -108,7 +102,7 @@ function NewMemberForm({ obj }) {
         controlId="formBasicCheckbox"
       >
         <Form.Check
-          className="text-white f-c"
+          className="f-c"
           type="switch"
           id="favorite"
           name="favorite"
@@ -124,27 +118,26 @@ function NewMemberForm({ obj }) {
       </Form.Group>
 
       <Form.Group className="text-center">
-        <Button variant="primary" type="submit">
-          {obj.fbK ? 'Update' : 'Add'} Member
+        <Button className="btn-m" type="submit">
+          {obj.fbK ? 'Update' : 'Add'}
         </Button>
       </Form.Group>
     </Form>
   );
 }
 
-NewMemberForm.propTypes = {
+NewTeamForm.propTypes = {
   obj: PropTypes.shape({
-    image: PropTypes.string,
-    name: PropTypes.string,
-    role: PropTypes.string,
-    playerNumber: PropTypes.number,
+    club_name: PropTypes.string,
+    logo: PropTypes.string,
+    team_image: PropTypes.string,
     favorite: PropTypes.bool,
     fbK: PropTypes.string,
   }),
 };
 
-NewMemberForm.defaultProps = {
+NewTeamForm.defaultProps = {
   obj: initialState,
 };
 
-export default NewMemberForm;
+export default NewTeamForm;

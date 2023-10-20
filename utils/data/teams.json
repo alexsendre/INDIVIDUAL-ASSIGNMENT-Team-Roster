@@ -1,0 +1,18 @@
+{
+  "-NhCkHkl8VZ59sc95iH0": {
+    "club_name": "Arsenal",
+    "logo": "https://1000logos.net/wp-content/uploads/2016/10/Arsenal-Logo.png",
+    "team_image": "https://www.arsenal.com/sites/default/files/styles/small/public/images/mens-squad-photo-23.png?auto=webp&itok=YuZUuNyF",
+    "favorite": true,
+    "fbK": "-NhCkHkl8VZ59sc95iH0",
+    "uid": "Vbl6mFkrrkfhN9k1we4jCdDaUwg1"
+  },
+  "-NhCkHkl8VZ59sc95iH1": {
+    "club_name": "Real Madrid",
+    "logo": "https://1000logos.net/wp-content/uploads/2020/09/Real-Madrid-logo.png",
+    "team_image": "https://icdn.football-espana.net/wp-content/uploads/2021/02/Real-Madrid-7-1020x574.jpg",
+    "favorite": false,
+    "fbK": "-NhCkHkl8VZ59sc95iH1",
+    "uid": "Vbl6mFkrrkfhN9k1we4jCdDaUwg1"
+  }
+}
