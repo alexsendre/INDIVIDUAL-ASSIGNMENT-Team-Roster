@@ -18,7 +18,7 @@ export default function UserProfile() {
         <h4 className="mt-5">
           Hey there, thanks for using our app!
           <br />
-          Check out <span className="m-cl">the teams</span> or check out <span className="tr-cl">the roster</span> below!
+          Check out <span className="m-cl">the teams</span> or view <span className="tr-cl">the members</span> below!
         </h4>
         <div className="profile-btns mt-4">
           <Button style={{ marginRight: '5px' }} size="lg" className="btn-m" onClick={() => router.push('/teams/view')}>View Teams</Button>

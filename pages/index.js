@@ -19,7 +19,7 @@ function Home() {
       <h1 style={{ color: 'black' }}>Welcome, <span className="user-greet">{user.displayName}</span> </h1>
       <div>
         <h4 style={{ color: 'black' }} className="mt-2">
-          Check out <span className="m-cl">the teams</span> or check out <span className="tr-cl">our members</span> below!
+          Check out <span className="m-cl">the teams</span> or view <span className="tr-cl">the members</span> below!
         </h4>
         <div className="profile-btns mt-4">
           <Button style={{ marginRight: '5px' }} size="lg" className="btn-m" onClick={() => router.push('/teams/view')}>View Teams</Button>
