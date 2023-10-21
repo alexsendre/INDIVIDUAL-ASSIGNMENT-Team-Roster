@@ -5,7 +5,7 @@ import {
   Navbar, Container, Nav, Button,
 } from 'react-bootstrap';
 import { signOut } from '../utils/auth';
-import SearchBar from './SearchBar';
+// import SearchBar from './SearchBar';
 
 export default function NavBar() {
   return (
@@ -20,11 +20,11 @@ export default function NavBar() {
           <Link passHref href="/teams/view">
             <Nav.Link>Teams</Nav.Link>
           </Link>
+          <Link passHref href="/teams/new">
+            <Nav.Link>New Team</Nav.Link>
+          </Link>
           <Link passHref href="/members/view">
             <Nav.Link>Members</Nav.Link>
-          </Link>
-          <Link passHref href="/teams/new">
-            <Nav.Link>New Club</Nav.Link>
           </Link>
           <Link passHref href="/members/new">
             <Nav.Link>New Member</Nav.Link>
@@ -34,7 +34,7 @@ export default function NavBar() {
           </Link>
         </Nav>
       </Container>
-      <SearchBar />
+      {/* <SearchBar /> */}
       <Button variant="danger" className="mx-3" onClick={signOut}>Sign Out</Button>
     </Navbar>
   );

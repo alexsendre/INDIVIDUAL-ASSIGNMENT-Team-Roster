@@ -49,7 +49,7 @@ function NewTeamForm({ obj }) {
   return (
     <Form onSubmit={handleSubmit} className="form">
       <h2 className=" text-center mt-4">
-        {obj.fbK ? 'Update' : 'Add a'} Club
+        {obj.fbK ? 'Update' : 'Add a'} Team
       </h2>
 
       <Form.Group
